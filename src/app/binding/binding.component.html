@@ -53,6 +53,11 @@
             <div class="panel panel-body">
 
                 <button class="btn btn-primary" on-click="click($event)">Click</button><br><br>   <!--cách 1 on-sự kiện="expression" --> 
+                <div (click)="click_div()" style="background-color:yellow">
+                        <button class="btn btn-primary" on-click="click_btn($event)">Click</button>
+                </div>
+                <br><br>
+
                 <img 
                     (click)="click_hinh($event)" src="{{hinh}}" [attr.logo]="mauchu" 
                 /> 

@@ -41,16 +41,25 @@ export class bindingComponent{
     }
 
     click(e){
-        if(e.toElement.classList.value=="btn btn-primary"){
+        if(e.target.className=="btn btn-primary"){
            // alert(e.toElement.classList.value);
-            e.toElement.classList.value="btn btn-danger";
+           e.target.className="btn btn-danger";
         }
         else{
            // alert(e.toElement.classList.value);
-            e.toElement.classList.value="btn btn-primary";
+           e.target.className="btn btn-primary";
         }
-                
+        
        // console.log(e);
+      // console.log(e.target.className);
        
+    }
+
+    click_btn(e){
+        e.stopPropagation(); //nếu không có dòng này thì khi click sẽ chạy cả hàm click_div()
+        console.log("Btn");
+    }
+    click_div(){
+        console.log("Div");
     }
 }
