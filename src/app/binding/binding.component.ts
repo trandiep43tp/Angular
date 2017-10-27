@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 
+declare var jQuery:any;  //định nghĩ lại biến.Quan trọng nếu không có hàm onkeyup(e) không chạy
 @Component({
     moduleId: module.id,
     selector: "app-binding",
@@ -8,7 +9,9 @@ import { Component } from "@angular/core";
 })
 
 
+
 export class bindingComponent{
+    
     // mặc định khi chạy sẽ gọi constructor. mình có thể thay đổi biến được
     constructor(){        
         // this.ten="Phía sau một con đường";
@@ -61,5 +64,14 @@ export class bindingComponent{
     }
     click_div(){
         console.log("Div");
+    }
+       
+    onkeyup(e): void{
+        if(e.which==13){
+            //console.log(e.target.value);
+            //chèn vào thẻ p
+            jQuery("#resuls-tag").append('<span class="label label-info">' + e.target.value + '</span> ');
+            e.target.value="";
+        }
     }
 }
