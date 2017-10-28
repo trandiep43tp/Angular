@@ -1,0 +1,61 @@
+<div class="row">
+        <div class="col-sx-12 col-sm-12 col-md-12" style=" text-align:left">
+                <h1 >Theme <small>Setting</small></h1>            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sx-12 col-sm-12 col-md-12" style="background-color:pink">
+                <h4 >Data <small>Binding</small></h4>
+        </div>
+        <div class="col-sx-12 col-sm-6 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel panel-heading"><h2 class="panel-title">Ng Class</h2></div>
+                <div class="panel panel-body">
+                      
+                       
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel panel-heading"><h2 class="panel-title">Ng Style</h2></div>
+                <div class="panel panel-body">
+                                       
+    
+                </div>
+            </div>
+    
+            <div class="panel panel-primary">
+                <div class="panel panel-heading"><h2 class="panel-title">Ng If</h2></div>
+                <div class="panel panel-body">
+                    <h3 *ngIf="ishow">Ng if</h3>   <!--nếu đúng thì hiện-->
+                    <input type="text" placeholder="Hãy nhập số" class="form-control" #number (keyup)="0">
+                    <div class="alert alert-danger" *ngIf="number.value !='' && number.value<10">
+                        <strong>Bạn phải nhập số lớn hơn 10</strong>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sx-12 col-sm-6 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel panel-heading"><h2 class="panel-title">Ng Switch</h2></div>
+                <div class="panel panel-body">
+                     
+                </div>
+            </div>
+    
+            <div class="panel panel-primary">
+                <div class="panel panel-heading"><h2 class="panel-title">Ng For</h2></div>
+                <div class="panel panel-body">
+                        <h3 *ngFor="let x of courses; let i=index">  {{i+1}}: Bai {{x}}<br></h3>
+                    
+                </div>
+            </div>
+    
+            <div class="panel panel-primary">
+                    <div class="panel panel-heading"><h2 class="panel-title">Two </h2></div>
+                    <div class="panel panel-body">
+                        
+                    </div>
+            </div>
+        </div>
+    </div>

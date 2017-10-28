@@ -74,4 +74,8 @@ export class bindingComponent{
             e.target.value="";
         }
     }
+
+    //two way binding
+    name:string="";
+
 }
