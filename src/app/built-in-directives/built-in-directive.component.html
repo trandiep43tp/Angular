@@ -1,24 +1,23 @@
+    
 <div class="row">
-        <div class="col-sx-12 col-sm-12 col-md-12" style=" text-align:left">
-                <h1 >Theme <small>Setting</small></h1>            
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sx-12 col-sm-12 col-md-12" style="background-color:pink">
-                <h4 >Data <small>Binding</small></h4>
+        <div class="col-sx-12 col-sm-12 col-md-12" style=" text-align:left; background-color:pink">
+            <h1 >Build in <small>directive</small></h1>            
         </div>
         <div class="col-sx-12 col-sm-6 col-md-6">
             <div class="panel panel-primary">
                 <div class="panel panel-heading"><h2 class="panel-title">Ng Class</h2></div>
                 <div class="panel panel-body">
-                      
-                       
+                    <!--Để thêm nhiều class cho thẻ thì ta sử dụng ngClass-->
+
+                    <div [ngClass]="currentClasses()">Xin Chào</div>                      
                 </div>
             </div>
             <div class="panel panel-primary">
                 <div class="panel panel-heading"><h2 class="panel-title">Ng Style</h2></div>
                 <div class="panel panel-body">
-                                       
+                        <div [ngStyle]="currentStyles()">
+                                This div is initially italic, normal weight, and extra large (24px).
+                        </div>                 
     
                 </div>
             </div>
@@ -39,7 +38,23 @@
             <div class="panel panel-primary">
                 <div class="panel panel-heading"><h2 class="panel-title">Ng Switch</h2></div>
                 <div class="panel panel-body">
-                     
+                     <h3>Ng Switch</h3>
+                     <span [ngSwitch]="lua_chon">
+                         <span *ngSwitchCase="1">Bạn Chọn 1</span>
+                         <span *ngSwitchCase="2">Bạn Chọn 2</span>
+                         <span *ngSwitchCase="3">Bạn Chọn 3</span>
+                         <span *ngSwitchDefault>Bạn Chọn default 0</span>
+                     </span>
+                
+                     <ul class="nav nav-tabs">
+                        <li role="presentation" [class.active]="tab=='Home'"> <a href="#" (click)="tab_click($event)">Home</a></li>
+                        <li role="presentation" [class.active]="tab=='Profile'"> <a href="#" (click)="tab_click($event)">Profile</a></li>                        
+                     </ul>
+                     <div [ngSwitch]="tab">
+                         <div *ngSwitchCase=" 'Home' ">Home</div>
+                         <div *ngSwitchCase=" 'Profile' ">Profile</div>
+                         <div *ngSwitchDefault >Chua chọn</div>
+                     </div>
                 </div>
             </div>
     
@@ -52,10 +67,30 @@
             </div>
     
             <div class="panel panel-primary">
-                    <div class="panel panel-heading"><h2 class="panel-title">Two </h2></div>
+                    <div class="panel panel-heading"><h2 class="panel-title">De mo </h2></div>
                     <div class="panel panel-body">
+                        <label class="lable lable-primary">Template</label>
+                        <select class="form-control">
+                                <option>Blue</option>
+                                <option>Black</option>
+                                <option>White</option>
+                                <option>Custom</option>
+                        </select>
+                        <div class="col-sx-6 col-sm-12 col-md-6" style="margin-top:20px">
+                            <div class="form-group">                            
+                                 <label>Backgroud color</label>
+                                 <input class="form-control" type="color">
+                                 <label>Text color</label>
+                                 <input class="form-control" type="color">
+                             </div>
+                        </div>                    
+                            
+                        
+                            <label style="margin-top:30px">Your Text</label>                            
+                            <textarea class="form-control" [(ngModel)]="text" placeholder="Nhập văn bản" >bbbbbbb</textarea>
+                            <div style="margin:20px">{{text}}</div>
                         
                     </div>
             </div>
         </div>
-    </div>
+</div>
