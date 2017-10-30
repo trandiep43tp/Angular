@@ -80,7 +80,7 @@
                         import { FormsModule } from '@angular/forms'; và   FormsModule trong imports
                         thì mới chạy được
                     -->
-                    <input type="text" placeholder="Họ tên" class="form-control" [(ngModel)]="name">
+                    <input type="text" placeholder="Họ tên" class="form-control" [(ngModel)]="name"><!--phải khai báo biến name bên file ts-->
                     <p style="margin-top:20px; color:red"><b>Họ và tên: {{name}}</b></p>
                 </div>
         </div>

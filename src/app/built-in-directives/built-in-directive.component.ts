@@ -59,4 +59,17 @@ export class builtindirective{
         'color':        this.isSpecial ? 'red' : 'pink'
       };
     }
+
+
+    //viết cho demo
+    text:string="";
+    mau_nen:string="";
+
+    set_mau_nen(){
+      console.log("abc");
+    }
+
+    constructor(){
+      this.text="Angular 4"
+    }
 }
