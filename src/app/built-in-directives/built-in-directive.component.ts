@@ -63,13 +63,14 @@ export class builtindirective{
 
     //viết cho demo
     text:string="";
-    mau_nen:string="";
-
-    set_mau_nen(){
-      console.log("abc");
-    }
+    //mau_nen:string="";      
 
     constructor(){
       this.text="Angular 4"
+    }
+
+    doi_mau_nen(mau_nen,backgroundcolor,textcolor){
+      
+        console.log(mau_nen);
     }
 }
