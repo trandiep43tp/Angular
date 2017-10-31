@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';  //phải import mới sử dụng
 import { AppComponent } from './app.component';
 import {bindingComponent} from './binding/binding.component';
 import { builtindirective } from './built-in-directives/built-in-directive.component';
+import { baitapcomponent } from './built-in-directives/baitap.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     bindingComponent,
-    builtindirective
+    builtindirective,
+    baitapcomponent
     
   ],
   imports: [

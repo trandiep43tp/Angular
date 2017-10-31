@@ -23,18 +23,23 @@ export class bindingComponent{
         this.ten="Sầu tím thiệp hồng";
     }
 
-
+    //interpolation
     ten:string="Trần văn Điệp";
     namsinh: number=1983;
     sothich={ game:"Liên minh" , hoc:"toán"};
     mang:string[]=["Một","Hai","ba"];
     hinh: string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-3C79zymRF0hsIUQyQKOu28SDfZ-MMeu2ozdcnz-2jx0pFIm0A";
+    
+    //property
     link: string="https://angular.io/";
 
+    //class
     mac_ao:boolean= true;
+
+    //style
     mauchu:string="pink";
 
-
+    //event
     click_hinh(e){
         //alert("Bạn vừa click hình");        
         //console.log("Bạn vừ click hình");
