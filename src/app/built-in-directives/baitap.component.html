@@ -3,10 +3,10 @@
         <div class="panel panel-info">
             <div class="panel panel-heading">Bài 1 Vote Status</div>
             <div class="panel panel-body">
-                <p>{{status}}</p>
+                <p>{{status}}</p>               <!--mousseleve khi con trỏ ra khỏi thẻ, con mousseout là khi con trỏ chuột bắt đầu ra -->
                 <div style="margin-top:0px; background-color:pink" (mouseleave)="change_show(false)" >
-                   <p (mouseover)="change_show(true)" >
-                       <span class="label label-info " >{{name}}</span><br>
+                   <p >
+                       <span class="label label-info" (mouseover)="change_show(true)" >{{name}}</span><br>
                    </p>               
                   
                    <div *ngIf="showvote" (mouseleave)="change_show(false)" class="btn-group" >
@@ -16,6 +16,27 @@
                     </div>
                     
                 </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class= "col-sx-12 col-sm-12-col-md-12">
+        <div class="panel panel-info">
+            <div class="panel panel-heading">Bài 2 Form validate</div>
+            <div class="panel panel-body">
+                <form >
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Name</label>          
+                        <input class="form-control" (keyup)="check_name($event)" >
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span> <!--form-control-feedback để ẩn đi-->
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Email</label>
+                        <input class="form-control">
+                        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                    </div>                    
+                    <button class="btn btn-primary" type="submit" disabled="disabled" >Gửi</button>
+                </form>                
             </div>
         </div>
     </div>

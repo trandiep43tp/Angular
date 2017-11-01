@@ -22,4 +22,17 @@ export class baitapcomponent{
 
     }
 
+
+    //form validate
+    ten:string="";
+    email:string="";
+    glyphicon_name:boolean=false;
+    check_name(e){
+        this.ten=e.target.value;
+        
+        if(this.ten.length>=4){
+           this.glyphicon_name=true;
+        }
+        
+    }
 }
