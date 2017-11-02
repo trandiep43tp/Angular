@@ -25,31 +25,57 @@ export class baitapcomponent{
 
     //form validate
     ten:string="";
-    glyphicon_name:boolean=false;
-    glyphicon_show:boolean=true;
-    check_name(e){
-        //this.ten=e.target.value;
+    flagName:boolean= false;
+    iconName:string= "";
+
+    email:string="";
+    flagEmail:boolean=false;
+    iconEmail:string="";
+
+    checkButton:boolean=false;      //biến theo dõi khóa nút button
+
+    checkName(e){
         if(e.which==13){
+            this.ten=e.target.value;
+
             if(this.ten.length>=4){
-                this.glyphicon_name=true;
-                this.glyphicon_show=true;
+                this.flagName=true;
+                this.iconName="glyphicon-ok";
+                if(this.flagEmail && this.iconEmail=="glyphicon-ok")  this.checkButton=true;  //kiểm tra nếu email đã nhập đúng
              }
              else{
-                 this.glyphicon_name=true;
-                 this.glyphicon_show=false;
-             }            
+                 this.flagName=true;
+                 this.iconName="glyphicon-warning-sign";
+                 this.checkButton=false;
+                 
+                 
+             }   
+                      
         }
         else{
-            this.glyphicon_name=false;
-        }
-       
-        
+            this.flagName=false;
+        }            
     }
-    hien_class(){
-        return{
-            'glyphicon-ok' : this.glyphicon_show,
-            'glyphicon-warning-sign': !this.glyphicon_show
+
+    checkEmail(e){
+        if(e.which==13){
+            this.email=e.target.value;
+            if(this.email.length>=4){
+                this.flagEmail=true;
+                this.iconEmail="glyphicon-ok";
+                if(this.flagName && this.iconName=="glyphicon-ok") this.checkButton=true;
+            }
+            else{
+                this.flagEmail=true;
+                this.iconEmail="glyphicon-warning-sign";
+                this.checkButton=false;
+            }
+
         }
-        
+        else{
+            this.flagEmail=false;
+        }
+
     }
+    
 }
