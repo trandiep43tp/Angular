@@ -29,7 +29,6 @@ export class baitapcomponent{
     glyphicon_show:boolean=true;
     check_name(e){
         //this.ten=e.target.value;
-       
         if(e.which==13){
             if(this.ten.length>=4){
                 this.glyphicon_name=true;
@@ -38,7 +37,10 @@ export class baitapcomponent{
              else{
                  this.glyphicon_name=true;
                  this.glyphicon_show=false;
-             }
+             }            
+        }
+        else{
+            this.glyphicon_name=false;
         }
        
         
