@@ -1,0 +1,21 @@
+<h1>Hello</h1>
+<div class="row">
+    <div class= "col-sx-12 col-sm-12-col-md-12">
+        <div class="panel panel-info">
+            <div class="panel panel-heading">Form validate cách của thày</div>
+            <div class="panel panel-body">
+                <form >
+                    <div *ngFor="let element of elements" class="form-group">
+                        <label class="control-label">{{showLabel(element)}}</label>          
+                        <input class="form-control" >
+                        <span  class=" form-control-feedback glyphicon glyphicon-ok " ></span> <!--form-control-feedback để diều khiển phản hồi của glyphicon-->
+                    </div>
+                                 
+                    <button class="btn btn-primary" type="submit" [disabled]="!checkButton" >Gửi</button>
+                    
+                </form>                
+            </div>
+        </div>
+    </div>
+</div>
+
