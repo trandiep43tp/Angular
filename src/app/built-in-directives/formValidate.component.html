@@ -1,17 +1,18 @@
-<h1>Hello</h1>
 <div class="row">
     <div class= "col-sx-12 col-sm-12-col-md-12">
         <div class="panel panel-info">
             <div class="panel panel-heading">Form validate cách của thày</div>
             <div class="panel panel-body">
+                    <h3 style="color:red">Nhập vào rồi nhấn summit để kiểm tra</h3>
                 <form >
-                    <div *ngFor="let element of elements" class="form-group">
+                    <div *ngFor="let element of elements" class="form-group" [ngClass]="setClass(element)">
                         <label class="control-label">{{showLabel(element)}}</label>          
-                        <input class="form-control" >
-                        <span  class=" form-control-feedback glyphicon glyphicon-ok " ></span> <!--form-control-feedback để diều khiển phản hồi của glyphicon-->
+                        <input type="text" class="form-control" (keyup)="oninputChage($event,element)" >
+                        <span *ngIf="showSpanOk(element)" class=" form-control-feedback glyphicon glyphicon-ok" ></span>
+                        <span *ngIf="showSpanError(element)" class="form-control-feedback glyphicon glyphicon-warning-sign"></span> 
                     </div>
                                  
-                    <button class="btn btn-primary" type="submit" [disabled]="!checkButton" >Gửi</button>
+                    <button (click)="clickButton()" class="btn btn-primary" type="submit" [disabled]="!setDisabledButton()" >Summit</button>
                     
                 </form>                
             </div>
