@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';  //phải import mới sử dụng được two way binding
 
 import { AppComponent } from './app.component';
-import {bindingComponent} from './binding/binding.component';
+import { bindingComponent} from './binding/binding.component';
 import { builtindirective } from './built-in-directives/built-in-directive.component';
 import { baitapcomponent } from './built-in-directives/baitap.component';
-import {formComponent } from './built-in-directives/formValidate.component';
+import { formComponent } from './built-in-directives/formValidate.component';
+import { settingcolorComponent } from './settingColor/settingcolor.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {formComponent } from './built-in-directives/formValidate.component';
     bindingComponent,
     builtindirective,
     baitapcomponent,
-    formComponent
+    formComponent,
+    settingcolorComponent
     
   ],
   imports: [
