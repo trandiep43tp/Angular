@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+
+  //biến cho input
+  tieude:string="Project 3-input property";
+  mota: string = "Mô tả";
+
+  //hàm cho output
+  answer(e):void{
+    console.log(e);
+  }
+
+
+
+
 }

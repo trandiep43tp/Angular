@@ -14,9 +14,16 @@
     </div>
     <div class="col-sx-12 col-sm-6 col-md-6">
         <div class="panel panel-primary">
-            <div class="panel panel-heading">abc</div>
+            <div class="panel panel-heading">Input and Output</div>
             <div class="panel panel-body">
-                <h2>hhhh</h2>
+                <p>Ghi chú: thằng cha muốn truyền dữ liệu vào thằng con thì sử dụng input</p>
+                <p>Thằng con muốn truyền dữ liệu qua thằng cha thì dùng output</p>
+                <p>VD: component app là cha, component setting là thằng con</p>
+                <p style="color:red">Dữ liệu truyền từ AppComponent: {{stitle}}</p>
+                <p>Dữ liệu truyền từ AppComponent:{{sMota}}</p>
+                <h2>OutPut</h2>
+                <button (click)=onclick(1) class="btn btn-primary">Yes</button>
+                <button (click)=onclick(2) class="btn btn-success">No</button>
             </div>        
         </div>
     </div>

@@ -5,7 +5,13 @@
 <app-baitap></app-baitap>
 <app-form></app-form>
 -->
-<app-setting></app-setting>
+<app-setting   
+    [mtitle]="tieude" 
+    [mMota]="mota"
+
+    (answerRequest)="answer($event)"
+>
+</app-setting>
 
 <!--The content below is only a placeholder and can be replaced.-->
 
