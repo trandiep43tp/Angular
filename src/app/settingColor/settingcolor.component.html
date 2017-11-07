@@ -11,6 +11,30 @@
                 <button (click)="callPhone(phone.value)" class="btn btn-primary">Call</button>
             </div>
         </div>
+        <div class="panel panel-info">
+            <div class="panel panel-heading">Sử dụng Template tag </div>
+            <div class="panel panel-body">
+                <P>Template Tag sử dụng cho các câu lệnh ngIf, ngFor, ngSwitch</P>
+                <ng-template [ngIf]="ishow">
+                    <p>Dùng cho template ngIf</p>
+                </ng-template>
+
+                <p>Dùng cho template ngFor</p>
+                <ng-template ngFor let-i=index let-x [ngForOf]="mang">
+                    <p>{{i+1}}. Số:  {{x}}</p>
+                </ng-template>
+
+                <p>Dùng cho template ngFor</p>
+                <span [ngSwitch]="luachon">
+                        <ng-template [ngSwitchCase]="1"><span>Bạn Chọn 1</span></ng-template>
+                        <ng-template [ngSwitchCase]="2"><span>Bạn Chọn 2</span></ng-template>
+                        <ng-template [ngSwitchCase]="3"><span>Bạn Chọn 3</span></ng-template>
+                        <ng-template ngSwitchDefault ><span>Bạn Chọn Default</span></ng-template>
+                </span>                
+
+            </div>
+        </div>
+
     </div>
     <div class="col-sx-12 col-sm-6 col-md-6">
         <div class="panel panel-primary">
@@ -20,7 +44,9 @@
                 <p>Thằng con muốn truyền dữ liệu qua thằng cha thì dùng output</p>
                 <p>VD: component app là cha, component setting là thằng con</p>
                 <p style="color:red">Dữ liệu truyền từ AppComponent: {{stitle}}</p>
-                <p>Dữ liệu truyền từ AppComponent:{{sMota}}</p>
+                <p>Dữ liệu truyền từ AppComponent số:{{ mMota }}</p>
+                <p>Truyền mảng:</p>
+                <h6 *ngFor="let x of sarr; let i=index">  {{i+1}}: Biểu tượng: {{x}}</h6>
                 <h2>OutPut</h2>
                 <button (click)=onclick(1) class="btn btn-primary">Yes</button>
                 <button (click)=onclick(2) class="btn btn-success">No</button>

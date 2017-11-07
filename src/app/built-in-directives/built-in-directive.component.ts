@@ -13,16 +13,6 @@ export class builtindirective{
      //viết cho Ng For
      courses:string[]=["C","PHP","java"];
 
-     //viết cho Ng Swicth
-     lua_chon:number= 2;
-     tab:string="";
-
-
-     tab_click(e):void{
-       // console.log(e.target.text);
-      this.tab=e.target.text;  
-    }
-    
     //viết cho Ng class
     canSave:Boolean=false;
     isUnchanged:boolean=false;
@@ -58,6 +48,16 @@ export class builtindirective{
         'font-size':   !this.isSpecial    ? '24px'   : '12px',
         'color':        this.isSpecial ? 'red' : 'pink'
       };
+    }
+
+ //viết cho Ng Swicth
+    lua_chon:number= 2;
+    tab:string="";
+
+
+    tab_click(e):void{
+      // console.log(e.target.text);
+      this.tab=e.target.text;  
     }
 
 

@@ -10,8 +10,9 @@ export class AppComponent {
 
 
   //biến cho input
-  tieude:string="Project 3-input property";
-  mota: string = "Mô tả";
+  tieude:string="Project 3-input property 1123";
+  mota: number = 2999;
+  arr:string[]=["Like","Wow","Ha ha", "Angy","happy"];
 
   //hàm cho output
   answer(e):void{

@@ -3,8 +3,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: "app-setting",
-    templateUrl: "./settingcolor.component.html",
-    inputs: ["stitle:mtitle","mMota"]
+    templateUrl: "./settingcolor.component.html",    
+    inputs: ["stitle:mtitle","mMota","sarr:marr"]
 })
  //lấy dữ liệu từ appcomponent truyền vào
 //cách 2 chèn inputs vào @Component
@@ -29,6 +29,10 @@ export class settingcolorComponent{
     
 
 
+//Template tag 
+ishow:boolean=true;
+mang:string[]=["Một", "Hai", "Ba", "Bốn"];
+luachon:number=5;
 
 
 
