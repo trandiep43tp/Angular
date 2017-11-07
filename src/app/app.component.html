@@ -5,6 +5,7 @@
 <app-baitap></app-baitap>
 <app-form></app-form>
 -->
+<!--
 <app-setting   
     [mtitle]="tieude" 
     [mMota]="mota"
@@ -14,4 +15,40 @@
     (answerRequest)="answer($event)"
 >
 </app-setting>
+-->
+
+<div class="row">
+    <div class="col-sx-12 col-sm-4 col-md-4">
+        <div class="panel panel-info">
+            <div class="panel panel-heading">App Component</div>
+            <div class="panel phanel-body">
+                <p [style.color]="resetColor">App Component</p>
+                <!--cách 1-->
+              <!--  <button class="btn btn-info" (click)="setColor()">Reset</button>  -->
+                 <!--cách 2: tại thẻ app-control khai báo 1 biến control. 
+                    khi đó biến này sẽ gọi được đến phương thức changeColor() đã khai báo trrong control.ccomponent.ts
+                -->
+                <button class="btn btn-info" (click)="control.changeColor('black')">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sx-12 col-sm-4 col-md-4">
+            <app-control
+            #control
+            [color]="resetColor"
+            (requestColor)="changecolor($event)"
+            ></app-control>
+    </div>
+   
+    <div class="col-sx-12 col-sm-4 col-md-4">
+            <app-template
+            [color]="resetColor"
+            
+            ></app-template>
+    </div>
+    
+</div>
+
+
 

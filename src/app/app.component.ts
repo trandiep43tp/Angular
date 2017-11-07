@@ -20,6 +20,15 @@ export class AppComponent {
   }
 
 
+  //viết cho bài tập setting color
+  resetColor: string="black";
+  
 
+  changecolor(e):void{
+    this.resetColor=e;
+  }
+  setColor(){
+    this.resetColor="black";
+  }
 
 }

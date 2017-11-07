@@ -8,6 +8,8 @@ import { builtindirective } from './built-in-directives/built-in-directive.compo
 import { baitapcomponent } from './built-in-directives/baitap.component';
 import { formComponent } from './built-in-directives/formValidate.component';
 import { settingcolorComponent } from './settingColor/settingcolor.component';
+import { controlComponent } from './settingColor/control.component';
+import { templateComponent } from './settingColor/template.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { settingcolorComponent } from './settingColor/settingcolor.component';
     builtindirective,
     baitapcomponent,
     formComponent,
-    settingcolorComponent
+    settingcolorComponent,
+    controlComponent,
+    templateComponent
     
   ],
   imports: [
