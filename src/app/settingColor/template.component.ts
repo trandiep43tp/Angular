@@ -10,5 +10,6 @@ export class templateComponent{
 
     ///cùng cấp
     inputmau: string="yellow";
+    
 
 }
