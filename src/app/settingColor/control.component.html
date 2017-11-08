@@ -1,13 +1,13 @@
 
 
-<div class="panel panel-info">
-    <div class="panel panel-heading">App Component</div>
+<div class="panel panel-primary">
+    <div class="panel panel-heading">{{titleControl}}</div>
     <div class="panel phanel-body">
-         <p [ngStyle]="{'color': controlColor}">Control Component</p>
+         <p [ngStyle]="{'color': scolor}">{{titleControl}}</p>
          <button class="btn btn-danger" (click)="changeColor('red')" >Red</button>
          <button class="btn btn-primary" (click)="changeColor('blue')" >blue</button>
-         <button class="btn btn-success" (click)="changeColor('yellow')" >Yellow</button><hr>
-         <p>Input và Output cung cấp</p>
+         <button class="btn btn-success" (click)="changeColor('yellow')" >Yellow</button>
+         
     </div>
 </div>
 
