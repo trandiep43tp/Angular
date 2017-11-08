@@ -21,14 +21,14 @@ export class AppComponent {
 
 
   //viết cho bài tập setting color
-  resetColor: string="black";
+  resetColor: string="yellow";
   
 
   changecolor(e):void{
     this.resetColor=e;
   }
   setColor(){
-    this.resetColor="black";
+    this.resetColor="yellow";
   }
 
 }
