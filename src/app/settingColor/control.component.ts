@@ -6,6 +6,7 @@ import { Component,Input,Output, EventEmitter } from '@angular/core';
 })
 
 export class controlComponent{
+    titleControl: string="Control Component";
     @Input("color") scolor: string;
     @Output("requestColor") myColor = new EventEmitter<string>();
 

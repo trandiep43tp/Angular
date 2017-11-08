@@ -6,5 +6,6 @@ import { Component,Input } from '@angular/core';
 })
 
 export class templateComponent{
+    titleTemplate:string="Template Component";
     @Input("color") scolor: string;
 }
