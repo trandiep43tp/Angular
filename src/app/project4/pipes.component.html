@@ -1,0 +1,28 @@
+<h3>Angular 4 - Project 4: Show List With Pipes & Custom Pipes</h3>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr class="info">
+            <th width="20%">Name</th>
+            <th width="40%">Input</th>
+            <th width="40%">Output</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--UpperCase-->
+        <tr>
+            <td >uppercase</td>
+            <td >{{courseObj.name}}</td>
+            <td >{{courseObj.name | uppercase }}</td>
+        </tr>
+        
+
+        <!--lowerCase-->
+        <tr>
+            <td >lowercase</td>
+            <td >{{courseObj.name}}</td>
+            <td >{{courseObj.name | lowercase }}</td>
+        </tr>
+        
+    </tbody>
+
+</table>

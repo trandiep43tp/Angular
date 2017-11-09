@@ -10,6 +10,7 @@ import { formComponent } from './built-in-directives/formValidate.component';
 import { settingcolorComponent } from './settingColor/settingcolor.component';
 import { controlComponent } from './settingColor/control.component';
 import { templateComponent } from './settingColor/template.component';
+import { pipesComponent } from './project4/pipes.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { templateComponent } from './settingColor/template.component';
     formComponent,
     settingcolorComponent,
     controlComponent,
-    templateComponent
+    templateComponent,
+    pipesComponent
     
   ],
   imports: [
