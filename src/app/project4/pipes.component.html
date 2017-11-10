@@ -22,7 +22,49 @@
             <td >{{courseObj.name}}</td>
             <td >{{courseObj.name | lowercase }}</td>
         </tr>
-        
+         <!--slicepipes-->
+         <tr>
+            <td > slice - string - pipes</td>
+            <td >{{str}}</td>
+            <td > {{str | slice:0:4}} --- {{str | slice:5:9}}</td>
+        </tr>
+         <!--slicepipes-->
+         <tr>
+            <td > slice -array - pipes</td>
+            <td >
+                <ul> <li *ngFor=" let course of courseObj.require">{{course}}</li> </ul>
+            </td>
+            <td > {{courseObj.require | slice:-1 }}</td>
+        </tr>  
+         <!--decimal-->
+         <tr>
+            <td >decimal</td>
+            <td >{{courseObj.price}}</td>
+            <td > {{ courseObj.price | number:'3.4-5' }}</td>  <!--1 là số phần nguyên muốn hiển thị . 4 là số phần thập phân -->
+        </tr>   
+        <!--percent-->
+        <tr>
+            <td >percent</td>
+            <td >{{percentA}}</td>
+            <td > {{ percentA | percent: '3.0-3'}}</td>  
+        </tr>  
+        <!--currency-->
+        <tr>
+            <td >currency</td>
+            <td >{{numberA}}</td>
+            <td > {{numberA | currency:'VND': 'symbol': '6.0-1' }}</td>  
+        </tr> 
+        <!--date pipes-->
+        <tr>
+            <td >datePipes</td>
+            <td >{{courseObj.date}}</td>
+            <td > {{courseObj.date | date: 'dd-MM-y' }}</td>  
+        </tr>   
+         <!--JSon-->
+         <tr>
+            <td >Json - Nếu muốn đọc chuỗi Json thì vào gg đánh jsononline sẽ được</td>
+            <td >{{courseObj}}</td>
+            <td > {{courseObj | json }}</td>  
+        </tr>         
     </tbody>
-
 </table>

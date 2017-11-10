@@ -11,7 +11,12 @@ export class pipesComponent{
         'id': 20,
         'name': "Angular 4",
         'date': new Date(),
-        'price': 69.8,
+        'price': 69.8765432,
         'require': ["TyperScript", "html", "css"]
     };
+
+    str:string="tran van diep";
+    percentA:number=0.12345;
+    numberA: number=12345.67;
+    
 }
