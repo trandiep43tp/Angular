@@ -65,6 +65,31 @@
             <td >Json - Nếu muốn đọc chuỗi Json thì vào gg đánh jsononline sẽ được</td>
             <td >{{courseObj}}</td>
             <td > {{courseObj | json }}</td>  
+        </tr>
+        <!--Chaining - kết hợp nhiều pipes-->
+        <tr>
+            <td >Chaining - kết hợp nhiều pipes</td>
+            <td >{{courseObj}}</td>
+            <td > {{courseObj | json |uppercase }}</td>  
         </tr>         
+    </tbody>
+</table>
+
+<h3>Angular 4 - Project 4: Custom Pipes</h3>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr class="info">
+            <th width="20%">Name</th>
+            <th width="40%">Input</th>
+            <th width="40%">Output</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--capitalize-->
+        <tr>
+            <td >Capitalize</td>
+            <td >{{text}}</td>
+            <td >{{text | capitalize }}</td>
+        </tr>
     </tbody>
 </table>

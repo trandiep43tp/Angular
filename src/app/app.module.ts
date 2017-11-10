@@ -10,7 +10,10 @@ import { formComponent } from './built-in-directives/formValidate.component';
 import { settingcolorComponent } from './settingColor/settingcolor.component';
 import { controlComponent } from './settingColor/control.component';
 import { templateComponent } from './settingColor/template.component';
-import { pipesComponent } from './project4/pipes.component'
+import { pipesComponent } from './project4/pipes.component';
+
+
+import { capitalisePipes } from './project4/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { pipesComponent } from './project4/pipes.component'
     settingcolorComponent,
     controlComponent,
     templateComponent,
-    pipesComponent
+    pipesComponent,
+    capitalisePipes
     
   ],
   imports: [

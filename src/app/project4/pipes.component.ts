@@ -18,5 +18,8 @@ export class pipesComponent{
     str:string="tran van diep";
     percentA:number=0.12345;
     numberA: number=12345.67;
+
+    //Custom pipes
+    text: string="AnguLar 4 is very easy";
     
 }
