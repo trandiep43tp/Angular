@@ -91,5 +91,21 @@
             <td >{{text}}</td>
             <td >{{text | capitalize }}</td>
         </tr>
+         <!--array-->
+         <tr>
+            <td >array</td>
+            <td >
+                <ul><li *ngFor="let x of arr">{{x}}</li></ul>
+            </td>
+            <td >
+                <ul><li *ngFor="let x of arr | array: 'sort' : 'odd'">{{x}}</li></ul>
+            </td>
+        </tr>
+        <!--summary-->
+        <tr>
+            <td >summary</td>
+            <td >{{summary}} </td>
+            <td >{{summary | summary: 30 :' ******' }} </td>
+        </tr>
     </tbody>
 </table>
