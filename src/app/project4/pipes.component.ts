@@ -23,6 +23,6 @@ export class pipesComponent{
     text: string="AnguLar 4 is very easy";
     arr: number[]=[1,6,3,10,8,9,6,5];
     summary: string="tôi đang hoc lập trình angular 4. nó thực sự khó đấy";
-    
+    category: string[]=["Web","It", "PHP", "javascript", "Web", "It"];
     
 }

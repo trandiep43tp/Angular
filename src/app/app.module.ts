@@ -16,6 +16,7 @@ import { pipesComponent } from './project4/pipes.component';
 import { capitalisePipes } from './project4/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
 import { arrayPipes } from './project4/array.pipe';
 import { summaryPipes } from './project4/summmary.pipe';
+import { categoryPipes } from './project4/category.pipe';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { summaryPipes } from './project4/summmary.pipe';
     pipesComponent,
     capitalisePipes,
     arrayPipes,
-    summaryPipes
+    summaryPipes,
+    categoryPipes
     
   ],
   imports: [
