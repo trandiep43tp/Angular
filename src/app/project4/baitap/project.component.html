@@ -1,41 +1,26 @@
 <h2>Project 4: Show list with pipes & Custom Pipes</h2>
 <div class="panel panel-info">
     <div class="panel panel-heading">
-        <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-                <label>Summary Types</label>
-                <select class="form-control">
-                    <option value="1" selected="true">Small</option>
-                    <option value="2">Medium</option>
-                    <option value="3">Full</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>Currency</label>
-                <select class="form-control">
-                    <option value="1" selected="true">USD</option>
-                    <option value="2">VNĐ</option>                    
-                </select>
-            </div>
-
-        </form>
-        <div class="clearfix"></div>  <!--class chống tràn-->
+        <app-controlProject4></app-controlProject4>
     </div>
 
-
-
     <div class="panel panel-body">
-        <div class="col-xs-12 col-sm-6 col-md-3" *ngFor="let x of arrcourse">
-            <div class="thumbnail">
-                <img src="{{hinh}}"/>
-                <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 " *ngFor="let x of courses">
+                <h3>{{x | json}}</h3>
+                <div class="thumbnail">
+                    <img src="{{hinh}}"/>
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">Button</a> 
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </div>
 
 </div>
