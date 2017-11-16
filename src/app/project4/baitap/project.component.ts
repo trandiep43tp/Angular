@@ -32,7 +32,7 @@ export class projectComponent {
 
 
     title: string="Project 4";
-    //hinh: string="C:\\wamp\www\Angular\src\images\banh_trung.jpg";
-    hinh: string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-3C79zymRF0hsIUQyQKOu28SDfZ-MMeu2ozdcnz-2jx0pFIm0A";
+    hinh: string="./../../../images/hinh_dep.jpg";
+    //hinh: string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-3C79zymRF0hsIUQyQKOu28SDfZ-MMeu2ozdcnz-2jx0pFIm0A";
 
 }

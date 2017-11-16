@@ -13,6 +13,7 @@ import { templateComponent } from './settingColor/template.component';
 import { pipesComponent } from './project4/pipes.component';
 import { projectComponent } from './project4/baitap/project.component';
 import { controlProject4Component } from './project4/baitap/controlProject4.component';
+import { courseComponent } from './project4/baitap/course.component';
 
 //import pipes
 import { capitalisePipes } from './project4/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
@@ -33,6 +34,7 @@ import { categoryPipes } from './project4/category.pipe';
     templateComponent,
     projectComponent,
     controlProject4Component,
+    courseComponent,
     
     //các pipes
     pipesComponent,
