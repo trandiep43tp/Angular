@@ -1,11 +1,20 @@
 
 <div class="thumbnail">
-    <img src="images/banh_chung.jpg"/>
+    <img src="{{hinh}}"/>
     <div class="caption">
         <h3><a href="#">{{courseObj.name | capitalize}}</a></h3>
         <p>{{courseObj.summary}}</p>
-        <p>
-            <a href="#" class="btn btn-primary" role="button">{{courseObj.price}}</a> 
+        <p >
+            <ng-template ngFor  let-y [ngForOf]="courseObj.cat">
+                <a href="#" ><span class="label label-primary">{{y}}</span></a>
+            </ng-template>        
+        </p>
+        <p >
+            <a href="#" *ngFor="let z of courseObj.cat" ><span class="label label-success" >{{z}}</span></a>
+        </p>
+
+        <p class="text-right">
+            <a href="#" class="btn btn-primary" role="button">{{courseObj.price}} USD</a> 
         </p>
     </div>
 </div>

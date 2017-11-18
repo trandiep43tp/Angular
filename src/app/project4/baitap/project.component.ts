@@ -11,16 +11,16 @@ export class projectComponent {
     constructor (){
         
         this.courses.push(
-             new course("C01","Lập trình hướng đối tượng",30, "c01.jpg","aaaaaaaaaaaaaaaa",["php", "angular"]
+             new course("C01","Lập trình hướng dối tượng",30, "c01.jpg","aaaaaaaaaaaaaaaa",["php", "angular"]
              )
         );
         
         this.courses.push(
-            new course("C02","Lập trình hướng đối tượng",30, "c01.jpg","bbbbbbbbbbbbbbbbbb",["php", "frontend"]
+            new course("C02","Lập trình hướng dối tượng",30, "c01.jpg","bbbbbbbbbbbbbbbbbb",["php", "frontend"]
             )
        )
        this.courses.push(
-            new course("C03","Lập trình hướng đối tượng",30, "c01.jpg","ccccccccccccccccccccc",["php", "backend"]
+            new course("C03","Lập trình hướng dối tượng",30, "c01.jpg","ccccccccccccccccccccc",["php", "backend"]
             )
         )
         this.courses.push(
