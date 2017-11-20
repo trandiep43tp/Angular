@@ -14,13 +14,15 @@ import { pipesComponent } from './project4/pipes.component';
 import { projectComponent } from './project4/baitap/project.component';
 import { controlProject4Component } from './project4/baitap/controlProject4.component';
 import { courseComponent } from './project4/baitap/course.component';
+//import http
+import { HttpModule } from '@angular/http';
 
 //import pipes
 import { capitalisePipes } from './project4/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
 import { arrayPipes } from './project4/array.pipe';
-import { summaryPipes } from './project4/summmary.pipe';
+import { summaryPipes } from './project4/summary.pipe';
 import { categoryPipes } from './project4/category.pipe';
-
+import { courseCategoryPipes } from './project4/category1.pipe';
 
 @NgModule({
   declarations: [
@@ -41,12 +43,14 @@ import { categoryPipes } from './project4/category.pipe';
     capitalisePipes,
     arrayPipes,
     summaryPipes,
-    categoryPipes
+    categoryPipes,
+    courseCategoryPipes
     
   ],
   imports: [
     BrowserModule,
-    FormsModule     //phải import mới sử dụng được two way binding
+    FormsModule,     //phải import mới sử dụng được two way binding
+    HttpModule  //phải import mới sử dung được 
   ],
   providers: [],
   bootstrap: [AppComponent]

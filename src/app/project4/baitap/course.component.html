@@ -3,18 +3,25 @@
     <img src="{{hinh}}"/>
     <div class="caption">
         <h3><a href="#">{{courseObj.name | capitalize}}</a></h3>
-        <p>{{courseObj.summary}}</p>
-        <p >
+        <p>{{courseObj.summary | summary : changeSummary(): charactor()}}</p> 
+        <p > 
             <ng-template ngFor  let-y [ngForOf]="courseObj.cat">
                 <a href="#" ><span class="label label-primary">{{y}}</span></a>
             </ng-template>        
         </p>
-        <p >
-            <a href="#" *ngFor="let z of courseObj.cat" ><span class="label label-success" >{{z}}</span></a>
+        <!--cách 2 viết luôn trong pipe-->
+        <p [innerHTML]="courseObj.cat | courseCategory">
+            
         </p>
 
         <p class="text-right">
-            <a href="#" class="btn btn-primary" role="button">{{courseObj.price}} USD</a> 
+            <ng-template [ngIf]="mtypeCurrency=='usd'">
+                    <a href="#" class="btn btn-primary" role="button"> {{courseObj.price | currency: mtypeCurrency : 'symbol':'2.2-3'}}</a> 
+            </ng-template>
+            <ng-template [ngIf]="mtypeCurrency=='vnd'">
+                    <a href="#" class="btn btn-primary" role="button"> {{courseObj.price*20000 | currency: mtypeCurrency : 'symbol':'2.0-3'}}</a> 
+            </ng-template>
+            
         </p>
     </div>
 </div>

@@ -1,13 +1,25 @@
 <h2>Project 4: Show list with pipes & Custom Pipes</h2>
 <div class="panel panel-info">
     <div class="panel panel-heading">
-        <app-controlProject4></app-controlProject4>
+        <app-controlProject4           
+            [typeSummary]="typeSummary"
+            [typeCurrency]="typeCurrency" 
+            (typeSummaryChange)=changeSummmary($event)
+            (typeCurencyChange)=changeCurrency($event)
+        >
+
+        </app-controlProject4>
     </div>
 
     <div class="panel panel-body">
         <div class="row">
             <div class="col-xs-12 col-sm-3 col-md-3 " *ngFor="let x of courses">
-                <app-course [mcourse]="x"></app-course>    <!--dùng input để truyền giá trị vào-->            
+                <app-course
+                 [mcourse]="x"
+                 [typeSummary]="typeSummary"
+                 [typeCurrency]="typeCurrency"
+                 >
+                </app-course>    <!--dùng input để truyền giá trị vào-->            
             </div>
         </div>
         
