@@ -23,6 +23,7 @@ import { arrayPipes } from './project4/array.pipe';
 import { summaryPipes } from './project4/summary.pipe';
 import { categoryPipes } from './project4/category.pipe';
 import { courseCategoryPipes } from './project4/category1.pipe';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { courseCategoryPipes } from './project4/category1.pipe';
     arrayPipes,
     summaryPipes,
     categoryPipes,
+    BookComponent,
     courseCategoryPipes
     
   ],

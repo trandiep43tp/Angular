@@ -12,6 +12,7 @@ export class settingcolorComponent{
     callPhone(value:string){
         console.log(value);
     }
+    
 
     //lấy dữ liệu từ appcomponent truyền vào
     //cách 1
