@@ -12,32 +12,61 @@ export class builtindirective{
 
      //viết cho Ng For
      courses:string[]=["C","PHP","java"];
+        //cho mảng các đối tượng
+      arrWords = [
+      { id: 1, en: 'action', vn: 'hành động', memorized: true },
+      { id: 2, en: 'actor', vn: 'diễn viên', memorized: false },
+      { id: 3, en: 'activity', vn: 'hoạt động', memorized: true },
+      { id: 4, en: 'active', vn: 'chủ động', memorized: true },
+      { id: 5, en: 'bath', vn: 'tắm', memorized: false },
+      { id: 6, en: 'bedroom', vn: 'phòng ngủ', memorized: true }
+          ];
+
+          newEn: string="";
+          newVn:string="";
+          show: boolean=false;
+          newWord(){
+            //thêm vào đầu mảng dùng unshift, thêm vào cuối mảng dùng push
+            if(!this.show){
+              this.show=true;
+            }else{
+              this.arrWords.push({
+                id: this.arrWords.length+1,
+                en: this.newEn,
+                vn: this.newVn,
+                memorized: false
+              });
+              this.newEn='';
+              this.newVn='';
+              this.show=false;
+            }
+            
+          }
 
     //viết cho Ng class
-    canSave:Boolean=false;
+    canSave:Boolean=true;
     isUnchanged:boolean=false;
-    isSpecial:boolean=true;
+    isSpecial:boolean=false;
 
     
-    currentClasses() {      
-      return  {
+    currentClasses ={      
+      
         'aoxanh': this.canSave,
         'aovang': this.isUnchanged,
         'aodo':  this.isSpecial
-      };
-    }
+      
+    };
 
     /*
-    currentClasses1: {};
-    setCurrentClasses1() {
-      
+    currentClasses1= {};
+    setCurrentClasses1() {      
       this.currentClasses1 =  {          
             'aoxanh': this.canSave,
             'aovang': this.isUnchanged,
             'aodo':  this.isSpecial           
        };      
     }
-    */
+    */    
 
 
     //viết cho ng Style    

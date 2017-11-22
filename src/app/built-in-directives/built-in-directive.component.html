@@ -7,9 +7,9 @@
             <div class="panel panel-primary">
                 <div class="panel panel-heading"><h2 class="panel-title">Ng Class</h2></div>
                 <div class="panel panel-body">
-                    <!--Để thêm nhiều class cho thẻ thì ta sử dụng ngClass-->
+                    <!--Để thêm nhiều class cho thẻ thì ta sử dụng ngClass.Có thể viết theo dạng hàm như ng style -->
 
-                    <div [ngClass]="currentClasses()">Xin Chào</div>                      
+                    <div [ngClass]="currentClasses">Xin Chào</div>                      
                 </div>
             </div>
             <div class="panel panel-primary">
@@ -62,6 +62,18 @@
                 <div class="panel panel-heading"><h2 class="panel-title">Ng For</h2></div>
                 <div class="panel panel-body">
                         <h3 *ngFor="let x of courses; let i=index">  {{i+1}}: Bai {{x}}<br></h3>
+                        <h3>Mảng các đối tượng</h3>
+                        <div *ngFor="let word of arrWords">
+                            <h4 [ngStyle]="{color: word.memorized? 'red':'yellow'}">{{word.en}}</h4>
+                            <h4 [style.background]="word.memorized? 'green' : 'yellow'">{{word.vn}}</h4>
+                        </div>
+                        <div>
+                            <h3>Thêm từ mới vào mảng</h3>
+                            <input class="form-control" placeholder="English" [(ngModel)]="newEn" *ngIf="show">
+                            <input class="form-control" placeholder="Vietnamese" [(ngModel)]="newVn" *ngIf="show"><br>
+                            <button class="btn btn-primary" (click)="newWord()">Thêm Từ Mới</button>
+                            <br>
+                        </div>
                     
                 </div>
             </div>
