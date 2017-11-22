@@ -24,6 +24,9 @@ import { summaryPipes } from './project4/summary.pipe';
 import { categoryPipes } from './project4/category.pipe';
 import { courseCategoryPipes } from './project4/category1.pipe';
 import { BookComponent } from './book/book.component';
+import { BookChildComponent } from './book/bookChild.component';
+import { Book1Component } from './book/book1.component';
+
 
 @NgModule({
   declarations: [
@@ -38,14 +41,16 @@ import { BookComponent } from './book/book.component';
     projectComponent,
     controlProject4Component,
     courseComponent,
+    BookComponent,
+    BookChildComponent,
+    Book1Component,
     
     //các pipes
     pipesComponent,
     capitalisePipes,
     arrayPipes,
     summaryPipes,
-    categoryPipes,
-    BookComponent,
+    categoryPipes,    
     courseCategoryPipes
     
   ],
