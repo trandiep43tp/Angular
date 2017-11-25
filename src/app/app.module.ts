@@ -17,6 +17,8 @@ import { courseComponent } from './project4/baitap/course.component';
 //import http
 import { HttpModule } from '@angular/http';
 import { httpComponent } from './http/http.component';
+//import { ipService } from './http/ip.service';
+import { ipComponent } from './http/ip.component';
 
 //import pipes
 import { capitalisePipes } from './project4/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
@@ -46,8 +48,8 @@ import { Book1Component } from './book/book1.component';
     BookChildComponent,
     Book1Component,
     httpComponent,
-
-    
+   // ipService,
+   ipComponent,
     //các pipes
     pipesComponent,
     capitalisePipes,
