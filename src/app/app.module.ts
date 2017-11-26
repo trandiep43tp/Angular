@@ -30,6 +30,10 @@ import { BookComponent } from './book/book.component';
 import { BookChildComponent } from './book/bookChild.component';
 import { Book1Component } from './book/book1.component';
 
+//import service
+import { ipService } from './http/ip.service';
+import { WeatherComponent } from './weather/weather.component';
+
 
 @NgModule({
   declarations: [
@@ -48,6 +52,7 @@ import { Book1Component } from './book/book1.component';
     BookChildComponent,
     Book1Component,
     httpComponent,
+    WeatherComponent,
    // ipService,
    ipComponent,
     //các pipes
@@ -64,7 +69,7 @@ import { Book1Component } from './book/book1.component';
     FormsModule,     //phải import mới sử dụng được two way binding
     HttpModule  //phải import mới sử dung được 
   ],
-  providers: [],
+  providers: [ipService ],  //khi sử dụng service cho nhiều component
   bootstrap: [AppComponent]
 })
 export class AppModule { }

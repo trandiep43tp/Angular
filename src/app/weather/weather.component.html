@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-sx-12 col-sm-12 col-md-12">
+      <div class="panel panel-primary">
+        <div class="panel panel-heading">Xem Thời Tiết</div>
+        <div class=" panel panel-body">
+          <h3>{{ cityName===''? "Enter name City" : (cityName + " nhiệt độ " + temp)}} </h3>
+          <h3>{{cityName | uppercase}}</h3>
+          <input placeholder="Enter name city" [(ngModel)]="txtcityName"/>
+          <button class="btn  btn-primary" (click)="getWeather()">Xem Thời Tiết</button>
+
+        </div>
+      </div>
+  </div>
+</div>

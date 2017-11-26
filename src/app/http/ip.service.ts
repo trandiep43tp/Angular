@@ -1,5 +1,5 @@
 
-import { Injectable } from "@angular/core";
+import { Injectable } from "@angular/core";     //chú ý phải import vào
 import { Http } from "@angular/http";
 @Injectable()
 
