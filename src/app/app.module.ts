@@ -29,10 +29,12 @@ import { courseCategoryPipes } from './project4/category1.pipe';
 import { BookComponent } from './book/book.component';
 import { BookChildComponent } from './book/bookChild.component';
 import { Book1Component } from './book/book1.component';
+import { FormSignInComponent } from './form/form.component';
 
 //import service
 import { ipService } from './http/ip.service';
 import { WeatherComponent } from './weather/weather.component';
+
 
 
 @NgModule({
@@ -61,6 +63,7 @@ import { WeatherComponent } from './weather/weather.component';
     arrayPipes,
     summaryPipes,
     categoryPipes,    
+    FormSignInComponent,
     courseCategoryPipes
     
   ],
