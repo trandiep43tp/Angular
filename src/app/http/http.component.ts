@@ -1,26 +1,5 @@
   //cách khai báo một service. chú ý trong app.module.ts phải import { HttpModule } from '@angular/http';
-    // và HttpModule trong import
-/*
-import { Component } from "@angular/core";
-import { Http } from "@angular/http";
-@Component({
-    selector: "app-ip",
-    template: `<h3>Ip</h3>`
-})
-
-export class httpComponent {
-    constructor( private http: Http){
-        this.http.get("http://ip.jsontest.com")
-        .toPromise()
-        .then(res =>res.json())
-        .then(resJson =>console.log(resJson))
-        .catch(err =>console.log(err))
-
-    }
-}
-*/
-
-
+ // và HttpModule trong import
 import { Component } from "@angular/core";
 import { Http } from "@angular/http";
 @Component({

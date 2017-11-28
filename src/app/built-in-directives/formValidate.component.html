@@ -3,6 +3,7 @@
         <div class="panel panel-info">
             <div class="panel panel-heading">Form validate cách của thày</div>
             <div class="panel panel-body">
+                    <h3>Xem trong thư mục form có cách hay</h3>
                     <h3 style="color:red">Nhập vào rồi nhấn summit để kiểm tra</h3>
                 <form >
                     <div *ngFor="let element of elements" class="form-group" [ngClass]="setClass(element)">
@@ -13,7 +14,7 @@
                     </div>
                                  
                     <button (click)="clickButton()" class="btn btn-primary" type="submit" [disabled]="!setDisabledButton()" >Summit</button>
-                    
+                    <!-- xem thuộc tính disabled trong bài form có cách hay hơn-->
                 </form>                
             </div>
         </div>
