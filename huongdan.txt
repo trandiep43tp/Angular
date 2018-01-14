@@ -1,0 +1,12 @@
+Các bước làm Angular
+
+CÀI ĐẶT MÔI TRƯỜNG
+1. để chạy được angular trước tiên ta phải cài:
+    - cài nodejs và npm. vào trang chủ nodejs để tải về bản cài đặt. các phiên bản node js sau này đẫ tích hợp luôn cả npm 
+    nên khi cài nodejs là đã cài cả npm.
+    - Để xem trên máy đã cài chưa ta mở cmd lên và đánh dòng lệnh node -v và npm -v để kiểm tra
+KHỞI TẠO ỨNG DỤNG
+1. Vào thư mục để chứa source code. Sau đó mở terminal lên, đánh dòng lệnh: ng new tên_thư_ muc. Chú ý tên ứng dụng không có số
+2. Cách chạy ứng dụng: mở terminal trong thư mục chứa ứng dụng. Đánh dòng lệnh ng server --open
+3. Cách ngắt server: nhấn phím Ctrl+C
+

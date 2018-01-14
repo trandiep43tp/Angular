@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 declare var jQuery:any;  //định nghĩ lại biến.Quan trọng nếu không có hàm onkeyup(e) không chạy
 @Component({
     moduleId: module.id,
-    selector: "app-binding",
+    selector: "bai1-binding",
     templateUrl: "./binding.component.html",
     styleUrls: ["./binding.component.css"]
 })
@@ -28,7 +28,8 @@ export class bindingComponent{
     namsinh: number=1983;
     sothich={ game:"Liên minh" , hoc:"toán"};
     mang:string[]=["Một","Hai","ba"];
-    hinh: string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-3C79zymRF0hsIUQyQKOu28SDfZ-MMeu2ozdcnz-2jx0pFIm0A";
+    //hinh: string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-3C79zymRF0hsIUQyQKOu28SDfZ-MMeu2ozdcnz-2jx0pFIm0A";
+    hinh: string="../../assets/images/banh_chung.jpg";
     
     //property
     link: string="https://angular.io/";
