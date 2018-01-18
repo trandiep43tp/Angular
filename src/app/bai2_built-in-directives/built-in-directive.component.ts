@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: "app-built",
+    selector: "bai2-app-built",
     templateUrl: "./built-in-directive.component.html",
     styleUrls: ["./built-in-directive.component.css"]
 })

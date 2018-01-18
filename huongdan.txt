@@ -10,3 +10,30 @@ KHỞI TẠO ỨNG DỤNG
 2. Cách chạy ứng dụng: mở terminal trong thư mục chứa ứng dụng. Đánh dòng lệnh ng server --open
 3. Cách ngắt server: nhấn phím Ctrl+C
 
+CÁCH CHẠY ANGULAR KHI CLONE TỪ GITHUB về
+khi clone từ github về đánh lệnh ng server không chạy thì làm theo các bước sau:
+- Mở terminal lên: đánh dòng lệnh npn install
+- Nếu tiếp tục không chạy thì đánh dòng lệnh: npm install -g @angular/cli. Sau đó sạc lại server lên
+
+CÁCH NÂNG CẤP PHIÊN BẢN ANGULAR CLI LOCAL
+npm install --save-dev @angular/cli@latest
+
+DataBinding
+    - interpolation {{}}
+    - property
+    - class
+    - style
+    - event
+    - two way binding
+Directive
+    - ngIF
+    - ngFor
+    - ngSwitch
+    - ngClass
+    - ngStyle
+
+Setting Color
+    - Template reference variable
+    - @input @Output
+    - Tempalte tag Directive
+

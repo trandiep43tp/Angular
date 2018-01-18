@@ -8,8 +8,6 @@ declare var jQuery:any;  //định nghĩ lại biến.Quan trọng nếu không 
     styleUrls: ["./binding.component.css"]
 })
 
-
-
 export class bindingComponent{
     
     // mặc định khi chạy sẽ gọi constructor. mình có thể thay đổi biến được
@@ -20,15 +18,15 @@ export class bindingComponent{
      
      //có thể viết hàm
     baihatmoi(){
-        this.ten="Sầu tím thiệp hồng";
+        this.baihat="Sầu tím thiệp hồng";
     }
 
     //interpolation
+    baihat: string="Phía sau một con đường";
     ten:string="Trần văn Điệp";
     namsinh: number=1983;
     sothich={ game:"Liên minh" , hoc:"toán"};
     mang:string[]=["Một","Hai","ba"];
-    //hinh: string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-3C79zymRF0hsIUQyQKOu28SDfZ-MMeu2ozdcnz-2jx0pFIm0A";
     hinh: string="../../assets/images/banh_chung.jpg";
     
     //property
@@ -66,10 +64,12 @@ export class bindingComponent{
 
     click_btn(e){
         e.stopPropagation(); //nếu không có dòng này thì khi click sẽ chạy cả hàm click_div()
-        console.log("Btn");
+        //console.log("Btn");
+        alert("Btn");
     }
     click_div(){
-        console.log("Div");
+       // console.log("Div");
+        alert("Div");
     }
        
     onkeyup(e): void{
