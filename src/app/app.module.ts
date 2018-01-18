@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { bindingComponent} from './bai1_binding/binding.component';
 
 
-import { builtindirective } from './built-in-directives/built-in-directive.component';
-import { baitapcomponent } from './built-in-directives/baitap.component';
-import { formComponent } from './built-in-directives/formValidate.component';
+import { builtindirective } from './bai2_built-in-directives/built-in-directive.component';
+import { baitapcomponent } from './bai2_built-in-directives/baitap.component';
+import { formComponent } from './bai2_built-in-directives/formValidate.component';
 import { settingcolorComponent } from './settingColor/settingcolor.component';
 import { controlComponent } from './settingColor/control.component';
 import { templateComponent } from './settingColor/template.component';
