@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 @Component ({
-    selector: "app-baitap",
+    selector: "bai2-app-baitap",
     templateUrl: "./baitap.component.html"
 })
 

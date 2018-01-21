@@ -7,7 +7,7 @@ interface person{
 }
 
 @Component({
-    selector: "app-form",
+    selector: "bai2-app-form",
     templateUrl: "./formValidate.component.html"
 })
 

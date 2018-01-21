@@ -1,7 +1,20 @@
-
+<!--
 <bai1-binding></bai1-binding>
 <bai2-app-built></bai2-app-built>
-<!--
+<bai2-app-baitap></bai2-app-baitap>
+<bai2-app-form></bai2-app-form>
+-->
+<bai3-app-setting   
+    [mtitle]="tieude" 
+    [mMota]="mota"
+    [marr]="arr"
+    
+
+    (answerRequest)="answer($event)"
+>
+</bai3-app-setting>
+
+
     
 <app-form-sign-in></app-form-sign-in>
 <app-weather></app-weather>
@@ -12,19 +25,9 @@
 
 
 
-<app-baitap></app-baitap>
-<app-form></app-form>
 
-<app-setting   
-    [mtitle]="tieude" 
-    [mMota]="mota"
-    [marr]="arr"
-    
 
-    (answerRequest)="answer($event)"
->
-</app-setting>
--->
+
 
 <div class="row">
     <div class="col-sx-12 col-sm-4 col-md-4">

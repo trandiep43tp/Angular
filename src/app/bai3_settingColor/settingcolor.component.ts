@@ -2,7 +2,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: "app-setting",
+    selector: "bai3-app-setting",
     templateUrl: "./settingcolor.component.html",    
     inputs: ["stitle:mtitle","mMota","sarr:marr"]
 })
@@ -10,7 +10,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 //cách 2 chèn inputs vào @Component
 export class settingcolorComponent{
     callPhone(value:string){
-        console.log(value);
+       // console.log(value);
+       alert(value);
     }
     
 
