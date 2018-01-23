@@ -26,7 +26,7 @@ export class AppComponent {
     this.resetColor=e;
   }
   setColor(){
-    this.resetColor="yellow";
+    this.resetColor="black";
   }
 
 }

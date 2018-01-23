@@ -37,3 +37,7 @@ Setting Color
     - @input @Output
     - Tempalte tag Directive
 
+Show list with pipes & custom pipes
+    - Pipes
+    - Custom pipes
+    

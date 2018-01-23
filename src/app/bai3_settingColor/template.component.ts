@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 @Component ({
-    selector: "app-template",
+    selector: "bai3-app-template",
     templateUrl: "./template.component.html"
 })
 

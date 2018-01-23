@@ -12,10 +12,11 @@ import { formComponent }         from './bai2_built-in-directives/formValidate.c
 import { settingcolorComponent } from './bai3_settingColor/settingcolor.component';
 import { controlComponent }      from './bai3_settingColor/control.component';
 import { templateComponent }     from './bai3_settingColor/template.component';
-import { pipesComponent }        from './project4/pipes.component';
-import { projectComponent }      from './project4/baitap/project.component';
-import { controlProject4Component } from './project4/baitap/controlProject4.component';
-import { courseComponent }       from './project4/baitap/course.component';
+
+import { pipesComponent }        from './bai4_pipes/pipes.component';
+import { projectComponent }      from './bai4_pipes/baitap/project.component';
+import { controlProject4Component } from './bai4_pipes/baitap/controlProject4.component';
+import { courseComponent }       from './bai4_pipes/baitap/course.component';
 //import http
 import { HttpModule }            from '@angular/http';
 import { httpComponent }         from './http/http.component';
@@ -23,11 +24,11 @@ import { httpComponent }         from './http/http.component';
 import { ipComponent }           from './http/ip.component';
 
 //import pipes
-import { capitalisePipes }       from './project4/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
-import { arrayPipes }            from './project4/array.pipe';
-import { summaryPipes }          from './project4/summary.pipe';
-import { categoryPipes }         from './project4/category.pipe';
-import { courseCategoryPipes }   from './project4/category1.pipe';
+import { capitalisePipes }       from './bai4_pipes/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
+import { arrayPipes }            from './bai4_pipes/array.pipe';
+import { summaryPipes }          from './bai4_pipes/summary.pipe';
+import { categoryPipes }         from './bai4_pipes/category.pipe';
+import { courseCategoryPipes }   from './bai4_pipes/category1.pipe';
 import { BookComponent }         from './book/book.component';
 import { BookChildComponent }    from './book/bookChild.component';
 import { Book1Component }        from './book/book1.component';

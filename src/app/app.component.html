@@ -3,18 +3,58 @@
 <bai2-app-built></bai2-app-built>
 <bai2-app-baitap></bai2-app-baitap>
 <bai2-app-form></bai2-app-form>
--->
+
 <bai3-app-setting   
     [mtitle]="tieude" 
     [mMota]="mota"
-    [marr]="arr"
-    
+    [marr]="arr"    
 
     (answerRequest)="answer($event)"
 >
 </bai3-app-setting>
+-->
+<!--Viết cho bài tập sử dụng input out put-->
+
+<!--
+<div class="row">
+    <div class="col-sx-12 col-sm-4 col-md-4">
+        <div class="panel panel-info">
+            <div class="panel panel-heading">App Component</div>
+            <div class="panel panel-body">
+                <p [style.color]="resetColor">App Component</p>
+                <!--cách 1-->
+              <!--  <button class="btn btn-info" (click)="setColor()">Reset</button>  -->
+                 <!--cách 2: tại thẻ app-control khai báo 1 biến control. 
+                    khi đó biến này sẽ gọi được đến phương thức changeColor() đã khai báo trrong control.ccomponent.ts
+                
+                <button class="btn btn-info" (click)="control.changeColor('black')">Reset</button>
+                <!--khi click ta gọi hàm changeColor trong control.component.ts thông qua biến control đặt bên dưới
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sx-12 col-sm-4 col-md-4">
+            <bai3-app-control
+            #control
+            [color]="resetColor"
+            (requestColor)="changecolor($event)"
+            ></bai3-app-control>
+    </div>
+   
+    <div class="col-sx-12 col-sm-4 col-md-4">
+            <bai3-app-template
+            [color]="resetColor"
+            
+            ></bai3-app-template>
+    </div>
+    
+</div>
+
+-->
 
 
+
+<!--
     
 <app-form-sign-in></app-form-sign-in>
 <app-weather></app-weather>
@@ -24,43 +64,11 @@
 
 
 
+-->
 
 
 
 
-
-<div class="row">
-    <div class="col-sx-12 col-sm-4 col-md-4">
-        <div class="panel panel-info">
-            <div class="panel panel-heading">App Component</div>
-            <div class="panel phanel-body">
-                <p [style.color]="resetColor">App Component</p>
-                <!--cách 1-->
-              <!--  <button class="btn btn-info" (click)="setColor()">Reset</button>  -->
-                 <!--cách 2: tại thẻ app-control khai báo 1 biến control. 
-                    khi đó biến này sẽ gọi được đến phương thức changeColor() đã khai báo trrong control.ccomponent.ts
-                -->
-                <button class="btn btn-info" (click)="control.changeColor('black')">Reset</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sx-12 col-sm-4 col-md-4">
-            <app-control
-            #control
-            [color]="resetColor"
-            (requestColor)="changecolor($event)"
-            ></app-control>
-    </div>
-   
-    <div class="col-sx-12 col-sm-4 col-md-4">
-            <app-template
-            [color]="resetColor"
-            
-            ></app-template>
-    </div>
-    
-</div>
 
 <div class="row">
     <app-pipes></app-pipes>

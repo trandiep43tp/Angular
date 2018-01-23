@@ -1,7 +1,7 @@
 
 import { Component,Input,Output, EventEmitter } from '@angular/core';
 @Component ({
-    selector: "app-control",
+    selector: "bai3-app-control",
     templateUrl: "./control.component.html"   
 
 })
