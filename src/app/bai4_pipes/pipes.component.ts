@@ -1,7 +1,8 @@
 import { Component} from '@angular/core';
-import { UpperCasePipe } from '@angular/common';
+//import { UpperCasePipe } from '@angular/common';
+
 @Component ({
-    selector: "app-pipes",
+    selector: "bai4-app-pipes",
     templateUrl: "./pipes.component.html"
 })
 

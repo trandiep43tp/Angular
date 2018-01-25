@@ -12,17 +12,14 @@
                     
                     <br><br>
                     <label>Passwords</label> 
-                    <input 
-                        class="form-control" 
-                        type="password"
-                        placeholder="Passwords"
+                    <input class="form-control" type="password" placeholder="Passwords"
                         [(ngModel)]="pass" 
                         name="pass"
                         required
                         #txtPass="ngModel"
                         pass
                     >   <!--touched là khi rời khỏi input-->
-                    <p *ngIf="txtPass.touched && txtPass.errors?.required"><!--sử dụng txtPass này ngắn gọn hơn-->
+                    <p *ngIf="txtPass.touched && !txtPass.errors?.required"><!--sử dụng txtPass này ngắn gọn hơn-->
                       Enter your pass
                     </p> 
                     <p>{{txtPass.errors | json}}</p>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-book',
+  selector: 'bai5-app-book',
   templateUrl: './book.component.html',
   styleUrls: ['./book.component.css']
 })

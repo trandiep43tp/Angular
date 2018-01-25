@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { course } from './course.class';
+import { course } from './course.class';   //import khóa học từ class course
 
 @Component ({
     selector: "app-project",
@@ -18,6 +18,7 @@ export class projectComponent {
     changeCurrency(e){
         this.typeCurrency=e;
     }
+
     constructor (){
         
         this.courses.push(
@@ -38,10 +39,6 @@ export class projectComponent {
             )
        )
       
-    }
-
-
-    
-    //hinh: string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-3C79zymRF0hsIUQyQKOu28SDfZ-MMeu2ozdcnz-2jx0pFIm0A";
+    }   
 
 }

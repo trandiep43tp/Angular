@@ -39,5 +39,5 @@ export class courseComponent{
             return "";
         }else return "......";
     }
-    hinh: string="http://9mobi.vn/cf/images/2015/03/nkk/hinh-nen-dep-1.jpg";
+    hinh: string="assets/images/banh_chung.jpg";
 }

@@ -17,6 +17,11 @@ import { pipesComponent }        from './bai4_pipes/pipes.component';
 import { projectComponent }      from './bai4_pipes/baitap/project.component';
 import { controlProject4Component } from './bai4_pipes/baitap/controlProject4.component';
 import { courseComponent }       from './bai4_pipes/baitap/course.component';
+
+import { BookComponent }         from './bai5_input_o_thamso/book.component';
+import { BookChildComponent }    from './bai5_input_o_thamso/bookChild.component';
+import { Book1Component }        from './bai5_input_o_thamso/book1.component';
+
 //import http
 import { HttpModule }            from '@angular/http';
 import { httpComponent }         from './http/http.component';
@@ -29,9 +34,7 @@ import { arrayPipes }            from './bai4_pipes/array.pipe';
 import { summaryPipes }          from './bai4_pipes/summary.pipe';
 import { categoryPipes }         from './bai4_pipes/category.pipe';
 import { courseCategoryPipes }   from './bai4_pipes/category1.pipe';
-import { BookComponent }         from './book/book.component';
-import { BookChildComponent }    from './book/bookChild.component';
-import { Book1Component }        from './book/book1.component';
+
 import { FormSignInComponent }   from './form/form.component';
 
 //import service
