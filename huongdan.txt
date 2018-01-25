@@ -40,4 +40,7 @@ Setting Color
 Show list with pipes & custom pipes
     - Pipes
     - Custom pipes
-    
+
+http && service
+    Service nó có thể là tất cả mọi thứ.Nó cung cấp các phương thức để làm cái gì đó.
+    Nhưng thường mục đích chính là lấy dữ liệu. cách khai báo một service xem trong bai6_service

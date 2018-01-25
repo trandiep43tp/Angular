@@ -1,6 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';  //phải import mới sử dụng được two way binding
+import { BrowserModule }         from '@angular/platform-browser';
+import { NgModule }              from '@angular/core';
+import { FormsModule }           from '@angular/forms';  //phải import mới sử dụng được two way binding
+import { HttpModule }            from '@angular/http';   //phải import mới sử dụng được httt
 
 import { AppComponent }          from './app.component';
 import { bindingComponent}       from './bai1_binding/binding.component';
@@ -22,11 +23,12 @@ import { BookComponent }         from './bai5_input_o_thamso/book.component';
 import { BookChildComponent }    from './bai5_input_o_thamso/bookChild.component';
 import { Book1Component }        from './bai5_input_o_thamso/book1.component';
 
+import { ipComponent }           from './bai6_service/ip.component';
 //import http
-import { HttpModule }            from '@angular/http';
+
 import { httpComponent }         from './http/http.component';
-//import { ipService }           from './http/ip.service';
-import { ipComponent }           from './http/ip.component';
+
+
 
 //import pipes
 import { capitalisePipes }       from './bai4_pipes/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
@@ -38,7 +40,7 @@ import { courseCategoryPipes }   from './bai4_pipes/category1.pipe';
 import { FormSignInComponent }   from './form/form.component';
 
 //import service
-import { ipService } from './http/ip.service';
+import { ipService } from './bai6_service/ip.service';
 import { WeatherComponent } from './weather/weather.component';
 
 

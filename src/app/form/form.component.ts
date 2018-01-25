@@ -15,7 +15,7 @@ export class FormSignInComponent implements OnInit {
   pass: string='';
   onClick(val){    
     console.log(val);
-    throw new Error("Form is invalid");  //nếu bị lỗi thì ném ra một thông báo
+    //throw new Error("Form is invalid");  //nếu bị lỗi thì ném ra một thông báo
   }
 
 

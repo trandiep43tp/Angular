@@ -4,7 +4,8 @@
           <div class=" panel panel-heading">Form</div>
           <div class="panel panel-body" >
                 <form (submit)="onClick(nameForm)" #nameForm="ngForm">                    
-                    <label>Email: </label> <input class="form-control" placeholder="Email" ngModel name="email" required > <!--required: yêu cầu phải nhập-->
+                    <label>Email: </label> 
+                    <input class="form-control" placeholder="Email" ngModel name="email" required > <!--required: yêu cầu phải nhập-->
                     <!--viết thêm một thẻ p để nếu chưa nhập email thì hiện thông báo-->
                     <span *ngIf="nameForm.controls.email?.errors?.required"><!--nếu email tồn tại, nếu error tồn tại-->
                       Enter your email
