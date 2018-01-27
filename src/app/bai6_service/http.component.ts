@@ -1,9 +1,11 @@
   //cách khai báo một service. chú ý trong app.module.ts phải import { HttpModule } from '@angular/http';
  // và HttpModule trong import
+
+ //viết chung service trong component
 import { Component } from "@angular/core";
 import { Http } from "@angular/http";
 @Component({
-    selector: "app-http",
+    selector: "bai6-app-http",
     template: `<h3>{{ip}}</h3>`
 })
 

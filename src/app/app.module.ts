@@ -24,11 +24,11 @@ import { BookChildComponent }    from './bai5_input_o_thamso/bookChild.component
 import { Book1Component }        from './bai5_input_o_thamso/book1.component';
 
 import { ipComponent }           from './bai6_service/ip.component';
-//import http
+import { httpComponent }         from './bai6_service/http.component';
 
-import { httpComponent }         from './http/http.component';
+import { WeatherComponent }      from './bai7_weather/weather.component';
 
-
+import { FormSignInComponent }   from './bai8_form/form.component';
 
 //import pipes
 import { capitalisePipes }       from './bai4_pipes/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
@@ -37,11 +37,11 @@ import { summaryPipes }          from './bai4_pipes/summary.pipe';
 import { categoryPipes }         from './bai4_pipes/category.pipe';
 import { courseCategoryPipes }   from './bai4_pipes/category1.pipe';
 
-import { FormSignInComponent }   from './form/form.component';
+
 
 //import service
 import { ipService } from './bai6_service/ip.service';
-import { WeatherComponent } from './weather/weather.component';
+
 
 
 

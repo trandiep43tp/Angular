@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { weatherService } from './weather.service';
 
 @Component({
-  selector: 'app-weather',
+  selector: 'bai7-app-weather',
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css'],
   providers: [weatherService]
@@ -19,7 +19,7 @@ export class WeatherComponent implements OnInit {
     
   }
 
-  getWeather(){
+  seeWeather(){
     this.isLoading=true;
     this.weather.getweather(this.txtcityName)
     .then(value => {this.temp=value;
