@@ -19,15 +19,28 @@
                         required
                         #txtPass="ngModel"  
                         pass
-                    >   <!--touched là khi rời khỏi input-->
+                        minlength="6"
+                        pattern="[a-z]*"
+                    > <!--minlength là một validate. muốn xem còn có các validate nào khác thì vào doc mở api để xem-->
+                       <!--khi nhấp con trỏ vào nếu không đánh pass mà rơi khỏi thì hiện thông báo-->
+                    <!--touched là khi rời khỏi input-->
                     <p *ngIf="txtPass.touched && txtPass.errors?.required"><!--khai báo thuộc tính txtpass, sử dụng txtPass này ngắn gọn hơn-->
                       Enter your pass
                     </p> 
-                    
+                    <div ngModelGroup="thethao">
+                         <!--để khi bắt đầu hiện lên là false thì ta đặt ngModel=false-->
+                        <label><input type="checkbox" [ngModel]=false name="bongda">Bóng Đá</label>
+                        <label><input type="checkbox" [ngModel]=false name="bongban">Bóng Bàn</label>
+                        <label><input type="checkbox" [ngModel]=false name="bongchuyen">Bóng Chuyền</label>
+                    </div>                   
                       <br><br>
-                      <button class="btn btn-primary" [disabled]="nameForm.invalid">Summit</button>                
-                </form>
+                      <button class="btn btn-primary" [disabled]="nameForm.invalid">Summit</button>  
+                                  
+                </form><br>
+                <button class="btn btn-primary" (click)="postToExpress(nameForm.value)">POST LÊN SERVER</button>  
                 <p>{{txtPass.errors | json}}</p>
+                <label>Cách sử dụng NgModelGroup</label>
+                <p>{{nameForm.value | json}}</p>
           </div>
       </div>
   </div>

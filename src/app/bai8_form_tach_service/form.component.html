@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-sx-12 col-sm-12 col-md-12">
+      <div class="panel panel-primary">
+          <div class=" panel panel-heading">Form Sử Dụng Service</div>
+          <div class="panel panel-body" >
+                <form (ngSubmit)="onClick(nameForm)" #nameForm="ngForm"> <!--để k load lạo trang thì ta sử dụng ngSubmit thay cho submit-->               
+                    <label>Email: </label> 
+                    <input class="form-control" placeholder="Email" ngModel name="email" required >                 
+                    <label>Passwords</label> 
+                    <input class="form-control" type="password" placeholder="Passwords"
+                        [(ngModel)]="pass" 
+                        name="pass"                    
+                        
+                    >                        
+                    <div ngModelGroup="thethao">
+                         <!--để khi bắt đầu hiện lên là false thì ta đặt ngModel=false-->
+                        <label><input type="checkbox" [ngModel]=false name="bongda">Bóng Đá</label>
+                        <label><input type="checkbox" [ngModel]=false name="bongban">Bóng Bàn</label>                       
+                    </div>                   
+                      <br>
+                      <button class="btn btn-primary" [disabled]="nameForm.invalid">Summit</button>                                    
+                </form>
+                 <p>{{ten}}</p>
+                
+          </div>
+      </div>
+  </div>
+</div>
+<br><br>

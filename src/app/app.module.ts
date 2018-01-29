@@ -2,6 +2,12 @@ import { BrowserModule }         from '@angular/platform-browser';
 import { NgModule }              from '@angular/core';
 import { FormsModule }           from '@angular/forms';  //phải import mới sử dụng được two way binding
 import { HttpModule }            from '@angular/http';   //phải import mới sử dụng được httt
+import { ReactiveFormsModule }   from '@angular/forms';  //phải import mới sử dụng được Reactive form trong 
+import { Routes, RouterModule }   from '@angular/router';  //phải import mới sử dụng được routing bai10
+  const routesConfig: Router= [
+    { path: 'contact', component: contactComponent},
+    { path:'detail', component: detailComponent}
+  ];
 
 import { AppComponent }          from './app.component';
 import { bindingComponent}       from './bai1_binding/binding.component';
@@ -29,6 +35,13 @@ import { httpComponent }         from './bai6_service/http.component';
 import { WeatherComponent }      from './bai7_weather/weather.component';
 
 import { FormSignInComponent }   from './bai8_form/form.component';
+import { Bai8FormComponent }     from './bai8_form_tach_service/form.component';
+
+import { reactFormComponent }    from './bai9_reactive_form/reactiveForm.component';
+
+import { contactComponent }      from './bai10_routting/contact.component';
+import { detailComponent }       from './bai10_routting/detail.component';
+import { routingComponent }      from './bai10_routting/routing.component';
 
 //import pipes
 import { capitalisePipes }       from './bai4_pipes/Capitalize.pipe';  //import custompipes và cũng đăng ký ở bên dưới
@@ -41,6 +54,7 @@ import { courseCategoryPipes }   from './bai4_pipes/category1.pipe';
 
 //import service
 import { ipService } from './bai6_service/ip.service';
+import { Router } from '@angular/router/src/router';
 
 
 
@@ -63,8 +77,14 @@ import { ipService } from './bai6_service/ip.service';
     Book1Component,
     httpComponent,
     WeatherComponent,
+    Bai8FormComponent,
+    reactFormComponent,
+    contactComponent,
+    detailComponent,
+    routingComponent,
    // ipService,
    ipComponent,
+   
     //các pipes
     pipesComponent,
     capitalisePipes,
@@ -77,8 +97,10 @@ import { ipService } from './bai6_service/ip.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule,     //phải import mới sử dụng được two way binding
-    HttpModule  //phải import mới sử dung được 
+    FormsModule,            //phải import mới sử dụng được two way binding
+    HttpModule,             //phải import mới sử dung được 
+    ReactiveFormsModule,     // phải import mới sử dụng được reactive form trong bài 8
+    RouterModule.forRoot(routesConfig)
   ],
   providers: [ipService ],  //khi sử dụng service cho nhiều component
   bootstrap: [AppComponent]
