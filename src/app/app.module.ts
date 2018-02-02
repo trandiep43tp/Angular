@@ -3,11 +3,7 @@ import { NgModule }              from '@angular/core';
 import { FormsModule }           from '@angular/forms';  //phải import mới sử dụng được two way binding
 import { HttpModule }            from '@angular/http';   //phải import mới sử dụng được httt
 import { ReactiveFormsModule }   from '@angular/forms';  //phải import mới sử dụng được Reactive form trong 
-import { Routes, RouterModule }   from '@angular/router';  //phải import mới sử dụng được routing bai10
-  const routesConfig: Router= [
-    { path: 'contact', component: contactComponent},
-    { path:'detail', component: detailComponent}
-  ];
+import { Routes, RouterModule }  from '@angular/router';  //phải iporrt mới sử dụng được routing
 
 import { AppComponent }          from './app.component';
 import { bindingComponent}       from './bai1_binding/binding.component';
@@ -54,8 +50,15 @@ import { courseCategoryPipes }   from './bai4_pipes/category1.pipe';
 
 //import service
 import { ipService } from './bai6_service/ip.service';
-import { Router } from '@angular/router/src/router';
 
+// tạo một mảng routing 
+ const routerConfig: Routes= [                        //nên đặt dưới cùng chứ k nó k nhận được component
+   { path: 'routing', component: routingComponent},
+   { path:'contact', component: contactComponent},
+   { path: 'detail', component: detailComponent}
+
+
+ ];
 
 
 
@@ -100,7 +103,8 @@ import { Router } from '@angular/router/src/router';
     FormsModule,            //phải import mới sử dụng được two way binding
     HttpModule,             //phải import mới sử dung được 
     ReactiveFormsModule,     // phải import mới sử dụng được reactive form trong bài 8
-    RouterModule.forRoot(routesConfig)
+    RouterModule.forRoot(routerConfig)
+   
   ],
   providers: [ipService ],  //khi sử dụng service cho nhiều component
   bootstrap: [AppComponent]

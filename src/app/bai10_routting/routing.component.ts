@@ -11,7 +11,7 @@ export class routingComponent{
 
 /*
 Cách tạo routing
-1. import { Route, RouterModule }   from '@angular/router';
+1. import { Routes, RouterModule }   from '@angular/router';
 2. 
 
 */
