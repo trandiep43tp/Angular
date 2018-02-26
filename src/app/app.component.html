@@ -1,4 +1,4 @@
-<!--
+
 <bai1-binding></bai1-binding>
 <bai2-app-built></bai2-app-built>
 <bai2-app-baitap></bai2-app-baitap>
@@ -12,10 +12,9 @@
     (answerRequest)="answer($event)"
 >
 </bai3-app-setting>
--->
+
 <!--Viết cho bài tập sử dụng input out put-->
 
-<!--
 <div class="row">
     <div class="col-sx-12 col-sm-4 col-md-4">
         <div class="panel panel-info">
@@ -23,12 +22,13 @@
             <div class="panel panel-body">
                 <p [style.color]="resetColor">App Component</p>
                 <!--cách 1-->
-              <!--  <button class="btn btn-info" (click)="setColor()">Reset</button>  -->
+               <button class="btn btn-info" (click)="setColor()">Reset</button>  
+
                  <!--cách 2: tại thẻ app-control khai báo 1 biến control. 
                     khi đó biến này sẽ gọi được đến phương thức changeColor() đã khai báo trrong control.ccomponent.ts
-                
+                 -->
                 <button class="btn btn-info" (click)="control.changeColor('black')">Reset</button>
-                <!--khi click ta gọi hàm changeColor trong control.component.ts thông qua biến control đặt bên dưới
+                <!--khi click ta gọi hàm changeColor trong control.component.ts thông qua biến control đặt bên dưới-->
             </div>
         </div>
     </div>
@@ -50,15 +50,13 @@
     
 </div>
 
-
-
 <div class="row">
     <bai4-app-pipes></bai4-app-pipes>
 </div>
 
--->
+
 <!--bài tập project 4-->
-<!--
+
 <div class="row">
     <app-project></app-project>
 </div>
@@ -71,12 +69,10 @@
 <bai8-app-form-tach-service></bai8-app-form-tach-service>
 <bai9-reactive-form></bai9-reactive-form>
 
-<bai10-app-contact></bai10-app-contact>
-<bai10-app-detail></bai10-app-detail>
--->
-<a routerLink="/routing">Routing</a>
 <a routerLink="/contact">Contact</a>
+<a routerLink="/detail">Detail</a>
 <router-outlet></router-outlet>
+
 
 
 

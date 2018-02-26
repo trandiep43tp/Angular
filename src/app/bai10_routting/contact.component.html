@@ -1,0 +1,7 @@
+<p>Dây là trang contact</p>
+<div *ngFor="let contact of contacts">
+    <a routerLink="/detail/{{contact.id}}/{{contact.name}}/{{contact.phone}}">{{contact.name}}</a>
+</div>
+
+
+
